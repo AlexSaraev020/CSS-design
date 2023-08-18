@@ -1,0 +1,794 @@
+body {
+  background-color: #2e6fa4;
+}
+.sideContainer {
+  position: relative;
+  width: 20%;
+}
+
+.logoContainer {
+  position: fixed;
+  top: 20px;
+  left: 50px;
+}
+
+.sideBar div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: 20px;
+  padding-left: 30px;
+  width: 70%;
+  border-radius: 50px;
+  box-shadow: -4px 11px 20px -4px rgba(0, 0, 0, 0.18);
+}
+
+.sideBar div:hover {
+  cursor: pointer;
+}
+.sideBar div svg {
+  margin-right: 5px;
+}
+
+.sideBar div a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #2e6fa4;
+}
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+  background-color: white;
+  border-top-right-radius: 100px;
+  width: 400px;
+  position: fixed;
+  top: 290px;
+  left: -10px;
+  height: calc(100vh - 288px);
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.mainPage {
+  display: flex;
+}
+
+.mainContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainCover {
+  position: relative;
+  height: 250px;
+  width: 1000px;
+}
+.coverImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.3);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.coverText {
+  position: relative;
+  width: 100%;
+  top: 15px;
+  left: 30px;
+}
+
+.overlay h1 {
+  position: absolute;
+  top: 10px;
+  color: #00477f;
+  font-family: sans-serif;
+  font-weight: 750;
+  font-size: 2.5rem;
+}
+.overlay h2 {
+  position: absolute;
+  top: 70px;
+  color: #00477f;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.overlay h3 {
+  position: absolute;
+  top: 110px;
+  font-size: 1.3rem;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.yellowFilter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to top right,
+    rgba(244, 205, 38, 1),
+    rgba(244, 205, 38, 0.3)
+  );
+}
+
+.contentContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 490px);
+  column-gap: 20px;
+  row-gap: 100px;
+  top: 80px;
+}
+.contentContainerAdmitere{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 980px);
+  column-gap: 20px;
+  row-gap: 100px;
+  top: 80px;
+}
+
+.mainCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  height: 300px;
+}
+.contentContainerAnunturi {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 490px);
+  column-gap: 20px;
+  row-gap: 40px;
+  top: 80px;
+  margin-bottom: 100px;
+}
+
+.anunturiCard {
+  position: relative;
+}
+.anunturiCard img {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 25px;
+  background-color: white;
+}
+.anunturiCard h1 {
+  color: white;
+}
+.anunturiCard h3 {
+  color: white;
+}
+.anunturiCard button {
+  color: white;
+  background-color: rgb(242, 207, 51);
+  width: 110px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mainCard a {
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  background-color: rgb(242, 207, 51);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+}
+
+.mainCard h2 {
+  color: #00477f;
+  font-weight: 500;
+}
+
+.mainCard h1 {
+  color: #00477f;
+  font-weight: 800;
+  margin-bottom: -10px;
+}
+
+.cardImage {
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.3);
+}
+.mainContainerContact {
+  width: 80%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 200px;
+}
+.contactMainParent {
+  position: relative;
+  width: 100%;
+}
+.contentContainerContact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 1000px;
+}
+.contactCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.contactCard h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+.contactTitle {
+  display: flex;
+  margin-bottom: -40px;
+  justify-content: center;
+}
+.contactTitle p {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.mainCoverContact {
+  position: relative;
+  height: 250px;
+  width: 1000px;
+}
+.campusLocation{
+  width: 1000px;
+  height: 500px;
+  border-radius: 25px;
+}
+.campusLocation iframe{
+  border-radius: 25px;
+}
+@media only screen and (max-width: 1491px) {
+  .mainCover {
+    height: 250px;
+    width: 800px;
+  }
+  .contentContainerContact {
+    width: 800px;
+  }
+  .mainCoverContact {
+    height: 250px;
+    width: 800px;
+  }
+  .contentContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 390px);
+    column-gap: 20px;
+    row-gap: 100px;
+    top: 80px;
+  }
+  .contentContainerAdmitere{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 780px);
+    column-gap: 20px;
+    row-gap: 100px;
+    top: 80px;
+  }
+  .contentContainerAnunturi {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 390px);
+    column-gap: 20px;
+    row-gap: 40px;
+    top: 80px;
+  }
+  .sideBar {
+    width: 300px;
+  }
+  .logoContainer {
+    left: 30px;
+  }
+  .mainCard {
+    font-size: 12px;
+  }
+  .mainContainerContact {
+    left: 100px;
+  }
+  .campusLocation{
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 1163px) {
+  .mainCover {
+    height: 250px;
+    width: 700px;
+  }
+  .contentContainerContact {
+    width: 700px;
+  }
+  .mainCoverContact {
+    height: 250px;
+    width: 700px;
+  }
+  .contentContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 20px;
+    row-gap: 100px;
+    top: 80px;
+  }
+  .contentContainerAdmitere{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 680px);
+    column-gap: 20px;
+    row-gap: 100px;
+    top: 80px;
+  }
+  .contentContainerAnunturi {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 20px;
+    row-gap: 40px;
+    top: 80px;
+  }
+
+  .sideBar {
+    width: 280px;
+  }
+  .logoContainer {
+    left: 10px;
+  }
+  .mainCard {
+    font-size: 12px;
+  }
+  .mainContainerContact {
+    left: 100px;
+  }
+  .campusLocation{
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 1047px) {
+  .sideBar div a p {
+    display: none;
+  }
+  .sideBar {
+    width: 110px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .sideBar div {
+    width: 25px;
+    margin-top: 50px;
+  }
+  .sideBar div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 20px;
+    padding-left: 10px;
+    width: 60px;
+    border-radius: 50px;
+    box-shadow: -4px 11px 20px -4px rgba(0, 0, 0, 0.18);
+  }
+  .logoContainer {
+    display: none;
+  }
+  .sideContainer {
+    width: 130px;
+  }
+  .mainContainerContact {
+    left: 80px;
+  }
+
+}
+@media only screen and (max-width: 926px) {
+  .mainContainerContact {
+    left: 80px;
+  }
+  .contentContainerContact {
+    width: 600px;
+  }
+  .mainCoverContact {
+    width: 600px;
+  }
+  .campusLocation{
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 817px) {
+  .mainCover {
+    left: 80px;
+    height: 200px;
+    width: 500px;
+  }
+  .overlay h1 {
+    top: 0px;
+  }
+  .overlay h2 {
+    top: 50px;
+  }
+  .overlay h3 {
+    width: 70%;
+    top: 90px;
+  }
+  .contentContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 490px);
+    row-gap: 50px;
+    top: 40px;
+    left: 80px;
+  }
+  .contentContainerAdmitere{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 490px);
+    row-gap: 50px;
+    top: 40px;
+    left: 80px;
+  }
+  .contentContainerAnunturi {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 490px);
+    row-gap: 20px;
+    top: 40px;
+    left: 80px;
+  }
+  .mainContainer {
+    position: relative;
+    width: 590px;
+    align-items: end;
+    position: relative;
+  }
+  .sideContainer {
+    width: 130px;
+    position: fixed;
+  }
+  .sideBar {
+    height: 100vh;
+  }
+  .mainContainerContact {
+    left: 160px;
+    width: 500px;
+  }
+  .contactTitle p {
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .contentContainerContact {
+    left: 0px;
+    width: 500px;
+  }
+  .mainCoverContact {
+    height: 200px;
+    width: 500px;
+  }
+  .contactCard svg{
+    width: 60px;
+  }
+  .campusLocation{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  .contentContainer {
+    grid-template-columns: repeat(1, 400px);
+    left: -20px;
+  }
+  .contentContainerAdmitere{
+    grid-template-columns: repeat(1, 400px);
+    left: -20px;
+  }
+  .contentContainerAnunturi {
+    grid-template-columns: repeat(1, 400px);
+    left: -20px;
+  }
+  .mainCover {
+    width: 400px;
+    left: -20px;
+  }
+
+  .overlay h1 {
+    font-size: 1.7rem;
+  }
+  .overlay h2 {
+    font-size: 1.4rem;
+    top: 35px;
+  }
+  .overlay h3 {
+    font-size: 1.1rem;
+    top: 70px;
+    width: 60%;
+  }
+  .mainContainerContact {
+    width: 400px;
+    left: 180px;
+  }
+
+  .contactTitle p {
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .contentContainerContact {
+    width: 400px;
+    left: 0px;
+  }
+  .mainCoverContact {
+    width: 400px;
+    left: 0px;
+  }
+  .contactCard {
+    width: 400px;
+  }
+  .campusLocation{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 625px){
+  .mainContainerContact {
+    width: 400px;
+    left: 120px;
+  }
+}
+@media only screen and (max-width: 573px){
+  .mainContainerContact {
+    width: 400px;
+    left: 100px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .contentContainer {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .contentContainerAdmitere{
+    grid-template-columns: repeat(1, 300px);
+  }
+  .contentContainerAnunturi {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .mainCover {
+    width: 300px;
+  }
+  .mainContainer {
+    width: 450px;
+  }
+  .overlay h1 {
+    font-size: 1.7rem;
+  }
+  .overlay h3 {
+    font-size: 1rem;
+    top: 90px;
+    width: 90%;
+  }
+  .overlay h2 {
+    font-size: 1.3rem;
+    top: 35px;
+    width: 80%;
+  }
+  .mainCoverContact{
+    width: 300px;
+    left: 0px;
+  }
+  .contentContainerContact{
+    width: 300px;
+    left: 0px;
+  }
+  .mainContainerContact{
+    width: 300px;
+    left: 100px;
+  }
+  .contactCard h1{
+    font-size: 1.2rem;
+    width: 60%;
+  }
+  .campusLocation{
+    width: 300px;
+    margin-top: 40px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 434px) {
+  .sideBar {
+    width: 80px;
+  }
+  .sideBar div {
+    margin-left: 20px;
+  }
+  .sideBar svg {
+    width: 30px;
+  }
+  .sideBar div {
+    width: 40px;
+  }
+  .contentContainer {
+    grid-template-columns: repeat(1, 250px);
+    top: 50px;
+  }
+  .contentContainerAdmitere{
+    grid-template-columns: repeat(1, 250px);
+    top: 50px;
+  }
+  .contentContainerAnunturi {
+    grid-template-columns: repeat(1, 250px);
+    top: 50px;
+  }
+  .contentContainerAnunturi img {
+    height: 120px;
+  }
+  .contentContainerAnunturi h1 {
+    font-size: 1.4rem;
+  }
+  .contentContainerAnunturi h3 {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+  .mainContainer {
+    width: 400px;
+  }
+  .mainCover {
+    width: 250px;
+    height: 150px;
+  }
+  .mainCard img {
+    width: 100px;
+    height: 100px;
+  }
+  .mainCard {
+    height: 200px;
+    margin-top: 10px;
+  }
+  .overlay h1 {
+    font-size: 1.2rem;
+  }
+  .overlay h3 {
+    font-size: 0.8rem;
+    top: 70px;
+    width: 80%;
+  }
+  .overlay h2 {
+    font-size: 1.1rem;
+    top: 25px;
+    width: 80%;
+  }
+  .mainCoverContact{
+    width: 250px;
+    left: 0px;
+  }
+  .contentContainerContact{
+    width: 250px;
+    left: 0px;
+  }
+  .mainContainerContact{
+    width: 250px;
+    left: 80px;
+  }
+  .contactCard h1{
+    font-size: 1.1rem;
+    width: 40%;
+  }
+  .contactCard svg{
+    width: 50px;
+  }
+  .contactCard{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 300px;
+  }
+  .contactTitle{
+    margin-top: -30px;
+  }
+  .campusLocation{
+    width: 250px;
+  }
+  
+}
+@media only screen and (max-width: 350px) {
+  .sideBar {
+    width: 65px;
+  }
+  .sideBar div {
+    margin-left: 12px;
+  }
+  .mainCover {
+    width: 230px;
+    height: 150px;
+  }
+  .contentContainer {
+    grid-template-columns: repeat(1, 230px);
+    top: 50px;
+  }
+  .contentContainerAdmitere{
+    grid-template-columns: repeat(1, 230px);
+    top: 50px;
+  }
+  .contentContainerAnunturi {
+    grid-template-columns: repeat(1, 230px);
+    top: 50px;
+  }
+  .contentContainerAnunturi img {
+    height: 100px;
+  }
+  .contentContainerAnunturi h1 {
+    font-size: 1.4rem;
+  }
+  .contentContainerAnunturi h3 {
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+  .overlay h3 {
+    font-size: 0.8rem;
+    top: 70px;
+    width: 85%;
+  }
+  .mainCard a {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+  .mainCoverContact{
+    width: 250px;
+    left: 0px;
+  }
+  .contentContainerContact{
+    width: 100%;
+    left: 0px;
+  }
+  .mainContainerContact{
+    width: 250px;
+    left: 60px;
+  }
+  .contactCard h1{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .contactCard svg{
+    width: 40px;
+    height: 90px;
+  }
+  .contactCard{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .contactTitle{
+    margin-top: -30px;
+  }
+}
